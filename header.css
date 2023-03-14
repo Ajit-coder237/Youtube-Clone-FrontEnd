@@ -1,0 +1,134 @@
+.header {
+    display: flex;
+    flex-direction: row;
+    height: 55px;
+    justify-content: space-between;
+    /*spread out the content evenly in the container with equal spaces between the element.*/
+    /* align-items: center;  */
+
+    position: fixed; /*container will lose its background color because by applying fixed the whole header is floating on the air and not taking any space in the page*/
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: white;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: rgb(228, 228, 228);
+}
+
+.left-section {
+    display: flex;
+    align-items: center;
+    /* justify-content: space-around; */
+}
+
+.hamburger-menu {
+    height: 24px;
+    margin-right: 20px;
+    margin-left: 24px;
+    cursor: pointer;
+}
+
+.youtube-logo {
+    height: 20px;
+    cursor: pointer;
+}
+
+.middle-section {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    margin-left: 70px;
+    margin-right: 35px;
+    max-width: 500px;
+    /*it says the width can be less than 300px, but as soon as it grows to be over 300px we will limit the growth. */
+}
+
+.search-bar {
+    flex: 1;
+    height: 34px;
+    font-size: 16px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(192, 192, 192);
+    border-radius: 2px;
+    box-shadow: inset 1px 2px 3px rgba(0, 0, 0, 0.05);
+    /*inset property will cast the shadow inside of the search box*/
+    width: 0; /*after certain width the search box will shrink completely to make the web page responsive*/
+}
+
+.search-bar::placeholder {
+    font-family: Roboto, Arial;
+    font-size: 16px;
+    padding-left: 10px;
+}
+
+.search-button {
+    height: 38px;
+    width: 66px;
+    background-color: rgb(240, 240, 240);
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(192, 192, 192);
+    border-radius: 2px;
+    margin-left: -1px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.search-icon {
+    /* display: flex; */
+    height: 25px;
+    margin-top: 4px;
+    /* align-items: center;
+    padding-left: 9px; */
+
+}
+
+.voice-search-button {
+    height: 37px;
+    width: 40px;
+    border-radius: 20px;
+    /* trick half the size of width*/
+    border: none;
+    background-color: rgb(245, 245, 245);
+    cursor: pointer;
+}
+
+.voice-search-icon {
+    height: 24px;
+    margin-top: 4px;
+    cursor: pointer;
+
+}
+
+.right-section {
+    display: flex;
+    flex-shrink: 0; /*no matter what happens we will not shrink this particular flex box.*/
+    width: 180px;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 20px;
+    /* min-width: 180px; The min-width CSS property sets the minimum width of an element. It prevents the used value of the width property from becoming smaller than the value specified for min-width.*/
+}
+
+.upload-icon {
+    height: 24px;
+    cursor: pointer;
+}
+
+.youtube-apps-icon {
+    height: 24px;
+    cursor: pointer;
+}
+
+.notifications-icon{
+    height: 24px;
+    cursor: pointer;
+}
+
+.current-user-picture {
+    height: 32px;
+    border-radius: 16px;
+    cursor: pointer;
+}
